@@ -1,0 +1,16 @@
+function Plot(x, y)
+{
+        X = x * size + 540;
+        Y = -y * size + 360;
+        return [x, y]
+}
+
+function Graph(x, y)
+{
+        return Plot(x, y) * 150
+}
+
+function f(x, y, cx, cy)
+{
+        return Graph(x * x - y * y + cx, 2 * x * y + cy)
+}
