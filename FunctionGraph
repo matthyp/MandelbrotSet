@@ -1,13 +1,13 @@
 function Plot(x, y)
 {
-        X = x * size + 540;
-        Y = -y * size + 360;
+        X = x;
+        Y = -y;
         return [x, y]
 }
 
 function Graph(x, y)
 {
-        return Plot(x, y) * 150
+        return Plot(x * 150 + 540, y * 150 + 360)
 }
 
 function f(x, y, cx, cy)
